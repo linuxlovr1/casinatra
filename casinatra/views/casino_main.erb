@@ -1,11 +1,10 @@
-<h1>Welcome, <%=@player%>, to the RUBY CASINATRA!</h1>
+<h1>Welcome, <%=@new_player.name%>, to the RUBY CASINATRA!</h1>
 <h2>What do you want to do?</h2>
+<h2>(you have) $<%= @new_player.amount.to_f %></h2>
 
-
-<ul>
   <li><a href="/hi_lo">HI-LO Game</a></li>
   <li><a href="/slots">Slots</a></li>
-  <li><a href="http://www.games.com/play/masque-publishing/blackjack/multi"></a>Black Jack</li>
+  <li><a href="http://www.games.com/play/masque-publishing/blackjack/multi">Black Jack</a></li>
   <li><a href="/player_menu">Player Menu</a></li>
 
 </ul>
