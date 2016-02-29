@@ -1,0 +1,22 @@
+<h1>Ready To Gamble?</h1>
+
+<form action='/casino_main' method='GET'>
+  <input type='text' placeholder = 'enter name' name='name'/>
+  <input type='submit'/>
+</form>
+
+<% class Player %>
+
+	<% def initialize%>
+    <% @name = params['name'] %>
+		<% wallet %>
+ <% end %>
+
+  <% def wallet%>
+    	<% @amount = rand(100..1000) %>
+      <p>
+        @amount
+      </p>
+  <% end %>
+<% end %>
+  <a href="casino_main">HOME</a>
