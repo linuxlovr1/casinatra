@@ -1,0 +1,11 @@
+<h1>Welcome, <%=@player%>, to the RUBY CASINATRA!</h1>
+<h2>What do you want to do?</h2>
+
+
+<ol>
+<% @list.each do |choice|%>
+<li>
+  <a href = '/menu_choice?menu_choice=<%=choice%>'><%=choice%></a>
+</li>
+<%end%>
+</ol>
